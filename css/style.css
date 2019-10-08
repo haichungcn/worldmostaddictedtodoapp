@@ -1,0 +1,95 @@
+*{
+  color: #FBFE7D;
+  font-family: 'Kalam', cursive;
+  cursor: url("https://i.imgur.com/PP2I38w.png"), auto;
+}
+
+body {
+  background-color: #80560C;
+}
+
+section {
+  margin : 2rem;
+  height : 90vh;
+  padding : 2rem;
+  background-image: url("https://wallpaperplay.com/walls/full/6/9/b/238359.jpg");
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #FBFE7D !important;
+}
+
+#addTask {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  width: 2rem;
+  background-color: #FEC0D0;
+  color:white;
+  border: none;
+}
+
+#addTask:hover{
+  background-color: #FBFE7D;
+  color: #FEC0D0;
+}
+
+#todorow{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.btn-delete {
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: 0.7rem;
+  padding : 0;
+}
+
+#userInput{
+    margin-right: 0.5rem;
+    color : #80560C;
+}
+
+.jumbotron{
+    border-radius: 40px;
+}
+
+label {
+  color: #FBFE7D;
+}
+
+label :hover {
+  color: #FEC0D0;
+  transition-duration: 0.5s;
+}
+
+#toDoListCollumn {
+  font-size: 1.7rem;
+  transition-duration: 0.5s;
+}
+
+.dropdown-menu{
+  width: 15px;
+}
+
+.form-check-input {
+  color:#FEC0D0;
+  width: 1rem;
+  padding : 2rem;
+  transition-duration: 0.5s;
+}
+
+#priorityDropdown{
+  background-color: #FBFE7D;
+  color: #DD9716;
+  border-color: #FEC0D0;
+  transition-duration: 0.5s;
+
+}
+#priorityDropdown :active {
+  text-decoration: none;
+}
