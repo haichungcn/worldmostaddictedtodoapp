@@ -118,7 +118,7 @@ function updateCurrentStatic() {
   doneLen = appState.tasks.filter(todo => todo.isDone === true).length;
   undoneLen = appState.tasks.filter(todo => todo.isDone === false).length;
   if (undoneLen < 1) {
-    document.getElementById("currentStatic").innerHTML = `think of some tasks`;
+    document.getElementById("currentStatic").innerHTML = ``;
   } else {
     document.getElementById("showallbadge").innerHTML = `${doneLen +
       undoneLen}`;
