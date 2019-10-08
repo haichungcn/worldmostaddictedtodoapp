@@ -1,5 +1,5 @@
 *{
-  color: #FBFE7D;
+  color: #80560C;
   font-family: 'Kalam', cursive;
   cursor: url("https://i.imgur.com/PP2I38w.png"), auto;
 }
@@ -10,7 +10,7 @@ body {
 
 section {
   margin : 2rem;
-  height : 90vh;
+  min-height : 90vh;
   padding : 2rem;
   background-image: url("https://wallpaperplay.com/walls/full/6/9/b/238359.jpg");
 }
@@ -35,6 +35,16 @@ h1 {
   color: #FEC0D0;
 }
 
+#userInput{
+    color : #80560C;
+}
+
+#userInput :active {
+  outline: none;
+  box-shadow: none !important;
+  border: 0;
+}
+
 #todorow{
     display:flex;
     flex-direction: column;
@@ -49,9 +59,12 @@ h1 {
   padding : 0;
 }
 
-#userInput{
-    margin-right: 0.5rem;
-    color : #80560C;
+#showallbutton #showundonebutton #showdonebutton {
+  border-color: #FBFE7D;
+}
+
+#showallbutton :hover {
+  background-color: #80560C !important;
 }
 
 .jumbotron{
@@ -59,7 +72,8 @@ h1 {
 }
 
 label {
-  color: #FBFE7D;
+  color: #80560C;
+  text-shadow: #80560C;
 }
 
 label :hover {
@@ -77,19 +91,20 @@ label :hover {
 }
 
 .form-check-input {
-  color:#FEC0D0;
-  width: 1rem;
-  padding : 2rem;
+  transform: scale(1.4);
+  margin-top: 1rem;
   transition-duration: 0.5s;
 }
 
-#priorityDropdown{
+#priorityDropdownBtn{
   background-color: #FBFE7D;
   color: #DD9716;
   border-color: #FEC0D0;
   transition-duration: 0.5s;
 
 }
-#priorityDropdown :active {
+#priorityDropdownBtn :active {
   text-decoration: none;
 }
+
+

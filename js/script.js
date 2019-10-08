@@ -1,5 +1,5 @@
 let wage = document.getElementById("userInput");
-let mode = "done"
+let mode = "all"
 
 wage.addEventListener("keydown", function (e) {
   if (e.keyCode === 13) {addTask()}
@@ -41,16 +41,16 @@ function addTask() {
   thisIsAFunctionThatRenderTodoList(mode);
 }
 
+
 function thisIsAFunctionThatRenderTodoList(mode) {
   let todoListContent = "";
   const toDoListShowCase = document.getElementById("toDoListCollumn");
-  let task = 0;
   if(appState.tasks.length > 0 && mode =="all"){
     appState.tasks.map((todo, i) => {
       if (todo.username === appState.currentUser && todo.isDone == false) {
         todoListContent += `
         <div id="listRenderArea" class="form-check">
-          <input class="form-check-input" type="checkbox" value="" onchange="handleCheck(this);" id="todo-id-${i}">
+          <input class="form-check-input pt-2" type="checkbox" value="" onchange="handleCheck(this);" id="todo-id-${i}">
           <label class="form-check-label" for="todo-id-${i}" id="label-id-${i}" onmouseover="showDeleteBtn(this)" onmouseout="hideDeleteBtn(this)">${todo.body} <button class="btn btn-sm btn-outline-danger btn-delete invisible" onclick='thisFunctionWillDeleteSomethingOnToDoList(${i})'>X</button></label>
         </div>`  
       } else if (todo.username === appState.currentUser && todo.isDone == true) {

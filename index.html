@@ -20,7 +20,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>World Most Addicted To-Do App</title>
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/f/o/foondtqmpv.ico" type="image/x-icon" />
+    <title>World Most Addicted Garfield To-Do App</title>
   </head>
   <body>
     <section class="container jumbotron shadow-lg p-5">
@@ -29,10 +30,10 @@
       </div>
 
       <div class="row my-3">
-        <div class="input-group-prepend">
+        <div  id="priorityDropdown" class="input-group-prepend">
           <button
-            id="priorityDropdown"  
-          class="btn btn-primary dropdown-toggle"
+            id="priorityDropdownBtn"  
+          class="btn btn-primary dropdown-toggle rounded-left"
             type="button"
             data-toggle="dropdown"
             aria-haspopup="true"
@@ -40,7 +41,7 @@
             >Priority</button
           >
           <div class="dropdown-menu">
-            <a class="dropdown-item text-danger" href="#">1</a><hr>
+            <a class="dropdown-item text-dang" href="#">1</a><hr>
             <a class="dropdown-item text-warning" href="#">2</a><hr>
             <a class="dropdown-item text-info" href="#">3</a>
           </div>
@@ -48,34 +49,36 @@
         <input
           id="userInput"
           type="text"
-          class="col-md-6 form-control"
+          class="form-control col-6 col-sm-4"
           placeholder="Type in your task and click ->"
           autofocus
         />
-        <button id="addTask" class="btn btn-light rounded" onclick="addTask()"
-          >+</button
-        >
+        <div class="input-group-append">
+          <button id="addTask" class="btn btn-light rounded-right" onclick="addTask()"
+            >+</button
+          >
+        </div>
       </div>
 
       <div class="row mb-2">
         <button
           id="showallbutton"
           type="button"
-          class="btn btn-sm btn-outline-info active rounded-pill mr-2"
+          class="btn btn-sm btn-outline-warning active rounded-pill mr-2"
           onclick="thisisABadNameYeahButIDontCare('all'), activeButton('showallbutton')"
           >All<span class="badge badge-light ml-2">0</span></button
         >
         <button
           id="showundonebutton"
           type="button"
-          class="btn btn-sm btn-outline-info rounded-pill mr-2"
+          class="btn btn-sm btn-outline-warning rounded-pill mr-2"
           onclick="thisisABadNameYeahButIDontCare('undone'), activeButton('showundonebutton')"
           >Undone<span class="badge badge-light ml-2">0</span></button
         >
         <button
           id="showdonebutton"
           type="button"
-          class="btn btn-sm btn-outline-info rounded-pill"
+          class="btn btn-sm btn-outline-warning rounded-pill"
           onclick="thisisABadNameYeahButIDontCare('done'), activeButton('showdonebutton')"
           >Done<span class="badge badge-light ml-2">0</span></button
         >
