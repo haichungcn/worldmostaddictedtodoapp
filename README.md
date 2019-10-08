@@ -2,7 +2,7 @@
 
 Created with love by: `Hai Chung` & `Nguyen Gia Tuan`
 
-View online at: ``
+View online at: `https://upbeat-meninsky-5ab86c.netlify.com`
 
 A web app let users create and manage tasks
 
@@ -20,14 +20,14 @@ To create a GIF, use [LiceCap](http://www.cockos.com/licecap/), [RecordIt](http:
 
 The following required functionalities are completed (this is a sample):
 
--   [v] The user can add event and keep track of todos
--   [v] The user update todo list on page.
--   [v] The user can remove tasks using a remove button.
--   [v] The user can mark tasks as done.
--   [v] The user can toggle between done and not done.
--   [v] For todo items that are done, add "strikethrough" styling.
--   [v] Add a checkbox filter to show only done or undone.
--   [v] Persist locally
+-   [x] The user can add event and keep track of todos
+-   [x] The user update todo list on page.
+-   [x] The user can remove tasks using a remove button.
+-   [x] The user can mark tasks as done.
+-   [x] The user can toggle between done and not done.
+-   [x] For todo items that are done, add "strikethrough" styling.
+-   [x] Add a checkbox filter to show only done or undone.
+-   [x] Persist locally
 
 ## Time Spent and Lessons Learned
 
