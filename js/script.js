@@ -48,12 +48,10 @@ function addTask() {
 function thisIsAFunctionThatRenderTodoList(mode) {
   let todoListContent = "";
   const toDoListShowCase = document.getElementById("toDoListCollumn");
-  const taskList = appState.tasks.slice();
-  console.log(taskList);
-  if (taskList.length > 0 && mode == "all") {
-    taskList.sort((a, b) => b.priority - a.priority);
-    console.log(taskList);
-    taskList.map((todo, i) => {
+  if (appState.tasks.length > 0 && mode == "all") {
+    appState.tasks.sort((a, b) => b.priority - a.priority);
+    console.log(appState.tasks);
+    appState.tasks.map((todo, i) => {
       if (todo.username === appState.currentUser && todo.isDone == false) {
         todoListContent += `
         <div id="listRenderArea" class="form-check">
@@ -72,8 +70,8 @@ function thisIsAFunctionThatRenderTodoList(mode) {
       }
     });
   }
-  if (taskList.length > 0 && mode === "done") {
-    taskList.map((todo, i) => {
+  if (appState.tasks.length > 0 && mode === "done") {
+    appState.tasks.map((todo, i) => {
       if (todo.username === appState.currentUser && todo.isDone == true) {
         todoListContent += `
         <div id="listRenderArea" class="form-check">
@@ -83,8 +81,8 @@ function thisIsAFunctionThatRenderTodoList(mode) {
       }
     });
   }
-  if (taskList.length > 0 && mode === "undone") {
-    taskList.map((todo, i) => {
+  if (appState.tasks.length > 0 && mode === "undone") {
+    appState.tasks.map((todo, i) => {
       if (todo.username === appState.currentUser && todo.isDone == false) {
         todoListContent += `
         <div id="listRenderArea" class="form-check">
