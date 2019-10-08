@@ -97,6 +97,7 @@ function thisIsAFunctionThatRenderTodoList(mode) {
 function handleCheck(checkbox) {
   let index = checkbox.id.split("-")[2];
   changeTaskState(index);
+  updateCurrentStatic;
   thisIsAFunctionThatRenderTodoList(mode);
 }
 
@@ -117,18 +118,10 @@ function thisFunctionWillDeleteSomethingOnToDoList(id) {
 function updateCurrentStatic() {
   doneLen = appState.tasks.filter(todo => todo.isDone === true).length;
   undoneLen = appState.tasks.filter(todo => todo.isDone === false).length;
-  if (undoneLen < 1) {
     document.getElementById("currentStatic").innerHTML = ``;
-  } else {
-    document.getElementById("showallbadge").innerHTML = `${doneLen +
-      undoneLen}`;
-    document.getElementById(
-      "showundonebadge"
-    ).innerHTML = `${undoneLen}`;
-    document.getElementById(
-      "showdonebadge"
-    ).innerHTML = `${doneLen}`;
-  }
+    document.getElementById("showallbadge").innerHTML = `${doneLen + undoneLen}`;
+    document.getElementById("showundonebadge").innerHTML = `${undoneLen}`;
+    document.getElementById("showdonebadge").innerHTML = `${doneLen}`;
 }
 
 function showDeleteBtn(element) {
@@ -156,4 +149,5 @@ function thisisABadNameYeahButIDontCare(newmode) {
 }
 
 getOldSession();
+updateCurrentStatic;
 thisIsAFunctionThatRenderTodoList(mode);
