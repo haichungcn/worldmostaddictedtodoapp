@@ -1,110 +1,130 @@
-*{
-  color: #80560C;
-  font-family: 'Kalam', cursive;
-  cursor: url("https://i.imgur.com/PP2I38w.png"), auto;
+* {
+    color: #80560c;
+    font-family: "Kalam", cursive;
+    cursor: url("https://i.imgur.com/PP2I38w.png"), auto;
 }
 
 body {
-  background-color: #80560C;
+    background-color: #80560c;
 }
 
 section {
-  margin : 2rem;
-  min-height : 90vh;
-  padding : 2rem;
-  background-image: url("https://wallpaperplay.com/walls/full/6/9/b/238359.jpg");
+    margin: 2rem;
+    min-height: 90vh;
+    padding: 2rem;
+    background-image: url("https://wallpaperplay.com/walls/full/6/9/b/238359.jpg");
 }
 
 h1 {
-  font-family: 'Permanent Marker', cursive;
-  color: #FBFE7D !important;
+    font-family: "Permanent Marker", cursive;
+    color: #fbfe7d !important;
 }
 
 #addTask {
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
-  width: 2rem;
-  background-color: #FEC0D0;
-  color:white;
-  border: none;
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+    width: 3rem;
+    background-color: #fec0d0;
+    color: white;
+    border: none;
 }
 
-#addTask:hover{
-  background-color: #FBFE7D;
-  color: #FEC0D0;
+#addTask:hover {
+    background-color: #fbfe7d;
+    color: #fec0d0;
 }
 
-#userInput{
-    color : #80560C;
+#userInput {
+    color: #80560c;
 }
 
 #userInput :active {
-  outline: none;
-  box-shadow: none !important;
-  border: 0;
+    outline: none;
+    box-shadow: none !important;
+    border: 0;
+    text-decoration: none;
 }
 
-#todorow{
-    display:flex;
+#todorow {
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-start;
 }
 
 .btn-delete {
-  width: 1.3rem;
-  height: 1.3rem;
-  font-size: 0.7rem;
-  padding : 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
+    padding: 0;
 }
 
 #showallbutton #showundonebutton #showdonebutton {
-  border-color: #FBFE7D;
+    border-color: #fbfe7d;
 }
 
 #showallbutton :hover {
-  background-color: #80560C !important;
+    background-color: #80560c !important;
 }
 
-.jumbotron{
+.jumbotron {
     border-radius: 40px;
 }
 
 label {
-  color: #80560C;
-  text-shadow: #80560C;
+    text-align: left;
+    color: #80560c;
+    text-shadow: #80560c;
 }
 
 label :hover {
-  color: #FEC0D0;
-  transition-duration: 0.5s;
+    color: #fec0d0;
+    transition-duration: 0.5s;
+}
+
+del {
+    color: #fbfe7d;
+}
+
+#listRenderArea {
+    text-align: left;
+}
+
+#listRenderArea :hover {
+    color: #fec0d0;
 }
 
 #toDoListCollumn {
-  font-size: 1.7rem;
-  transition-duration: 0.5s;
-}
-
-.dropdown-menu{
-  width: 15px;
+    font-size: 1.7rem;
+    transition-duration: 0.5s;
 }
 
 .form-check-input {
-  transform: scale(1.4);
-  margin-top: 1rem;
-  transition-duration: 0.5s;
+    transform: scale(1.4);
+    margin-top: 1rem;
+    transition-duration: 0.5s;
 }
 
-#priorityDropdownBtn{
-  background-color: #FBFE7D;
-  color: #DD9716;
-  border-color: #FEC0D0;
-  transition-duration: 0.5s;
-
+#priorityDropdown #priorityMenu {
+    font-weight: bold;
+    background-color: #fbfe7d;
+    color: #dd9716;
+    border-color: #fec0d0;
+    transition-duration: 0.5s;
+    width: 5.5rem;
 }
-#priorityDropdownBtn :active {
+
+#priorityDropdown :active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a {
   text-decoration: none;
+  color: #80560c;
 }
 
-
+a :hover {
+  color: #fbfe7d;
+}
