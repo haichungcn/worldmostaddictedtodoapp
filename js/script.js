@@ -1,7 +1,6 @@
 let wage = document.getElementById("userInput");
 let mode = "all";
-let star = new Image();
-star.src = "img/star/png";
+
 
 wage.addEventListener("keydown", function(e) {
   if (e.keyCode === 13) {
@@ -16,7 +15,6 @@ function getOldSession() {
       currentUser: "Anonymous",
       tasks: []
     };
-    console.log("I was here");
   } else {
     appState = JSON.parse(localStorage.getItem("appState"));
   }
@@ -50,7 +48,6 @@ function thisIsAFunctionThatRenderTodoList(mode) {
   const toDoListShowCase = document.getElementById("toDoListCollumn");
   if (appState.tasks.length > 0 && mode == "all") {
     appState.tasks.sort((a, b) => b.priority - a.priority);
-    console.log(appState.tasks);
     appState.tasks.map((todo, i) => {
       if (todo.username === appState.currentUser && todo.isDone == false) {
         todoListContent += `
@@ -121,16 +118,16 @@ function updateCurrentStatic() {
   doneLen = appState.tasks.filter(todo => todo.isDone === true).length;
   undoneLen = appState.tasks.filter(todo => todo.isDone === false).length;
   if (undoneLen < 1) {
-    document.getElementById("currentStatic").innerHTML = ``;
+    document.getElementById("currentStatic").innerHTML = `think of some tasks`;
   } else {
-    document.getElementById("showallbutton").lastChild.innerHTML = `${doneLen +
+    document.getElementById("showallbadge").innerHTML = `${doneLen +
       undoneLen}`;
     document.getElementById(
-      "showundonebutton"
-    ).lastChild.innerHTML = `${undoneLen}`;
+      "showundonebadge"
+    ).innerHTML = `${undoneLen}`;
     document.getElementById(
-      "showdonebutton"
-    ).lastChild.innerHTML = `${doneLen}`;
+      "showdonebadge"
+    ).innerHTML = `${doneLen}`;
   }
 }
 
