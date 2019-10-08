@@ -10,11 +10,8 @@ A web app let users create and manage tasks
 
 Here's a walkthrough of implemented user stories.
 
-To create a GIF, use [LiceCap](http://www.cockos.com/licecap/), [RecordIt](http://www.recordit.co), or [Loom](http://www.useloom.com), and link the image here in the markdown.
+![](https://i.imgur.com/6foM1ZJ.gif)
 
-```
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-```
 
 ## User Stories
 
