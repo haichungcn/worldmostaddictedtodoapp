@@ -102,7 +102,7 @@ del {
 
 .form-check-input {
     transform: scale(1.4);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     transition-duration: 0.5s;
 }
 
