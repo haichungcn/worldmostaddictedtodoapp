@@ -121,10 +121,10 @@ del {
 }
 
 a {
-  text-decoration: none;
-  color: #80560c;
+    text-decoration: none;
+    color: #80560c;
 }
 
 a :hover {
-  color: #fbfe7d;
+    color: #fbfe7d;
 }
