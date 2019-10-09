@@ -143,7 +143,7 @@ function activeButton(button) {
   });
 }
 
-function thisisABadNameYeahButIDontCare(newmode) {
+function handleChangeMode(newmode) {
   mode = newmode;
   thisIsAFunctionThatRenderTodoList(mode);
 }

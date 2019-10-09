@@ -46,15 +46,15 @@
 
       <div class="row mb-2">
         <button id="showallbutton" type="button" class="btn btn-sm btn-outline-warning active rounded-pill mr-2"
-          onclick="thisisABadNameYeahButIDontCare('all'), activeButton('showallbutton')">
+          onclick="handleChangeMode('all'), activeButton('showallbutton')">
           All<span id="showallbadge" class="badge badge-light ml-2">0</span>
         </button>
         <button id="showundonebutton" type="button" class="btn btn-sm btn-outline-warning rounded-pill mr-2"
-          onclick="thisisABadNameYeahButIDontCare('undone'), activeButton('showundonebutton')">
+          onclick="handleChangeMode('undone'), activeButton('showundonebutton')">
           Undone<span id="showundonebadge" class="badge badge-light ml-2">0</span>
         </button>
         <button id="showdonebutton" type="button" class="btn btn-sm btn-outline-warning rounded-pill"
-          onclick="thisisABadNameYeahButIDontCare('done'), activeButton('showdonebutton')">
+          onclick="handleChangeMode('done'), activeButton('showdonebutton')">
           Done<span id="showdonebadge" class="badge badge-light ml-2">0</span>
         </button>
       </div>
